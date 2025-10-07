@@ -1,74 +1,75 @@
 <?php
 App::uses('MarkdownHelper', 'Markdown.View/Helper');
 App::uses('View', 'View');
-App::import('Vendor', array('file' => 'autoload'));
+App::import('Vendor', ['file' => 'autoload']);
 
 /**
  * MarkdownHelper Test Case
- *
  */
-class MarkdownHelperTestCase extends CakeTestCase {
-/**
- * setUp method
- *
- * @return void
- */
-	public function setUp() {
-		parent::setUp();
-		$View = new View();
-		$this->Markdown = new MarkdownHelper($View);
-	}
+class MarkdownHelperTest extends CakeTestCase
+{
+    /**
+     * setUp method
+     *
+     * @return void
+     */
+    public function setUp(): void
+    {
+        parent::setUp();
+        $View = new View();
+        $this->Markdown = new MarkdownHelper($View);
+    }
 
-/**
- * tearDown method
- *
- * @return void
- */
-	public function tearDown() {
-		unset($this->Markdown);
+    /**
+     * tearDown method
+     *
+     * @return void
+     */
+    public function tearDown(): void
+    {
+        unset($this->Markdown);
 
-		parent::tearDown();
-	}
+        parent::tearDown();
+    }
 
-/**
- * testMd method
- *
- * @return void
- */
-	public function testMd() {
-$input = "
-## Hello
+    /**
+     * testMd method
+     *
+     * @return void
+     */
+    public function testMd(): void
+    {
+        $input = <<<EOT
+            ## Hello
 
-Here is something and it's really fun.
+            Here is something and it's really fun.
 
-It's so fun, I'll **make a list**:
+            It's so fun, I'll **make a list**:
 
-* This
-* That
-* More!
+            * This
+            * That
+            * More!
 
-Checkout [Technokracy](http://technokracy.net) for free beer.
-";
+            Checkout [Technokracy](http://technokracy.net) for free beer.
+            EOT;
 
-$expected = "<h2>Hello</h2>
+        $expected = <<<EOT
+            <h2>Hello</h2>
 
-<p>Here is something and it's really fun.</p>
+            <p>Here is something and it's really fun.</p>
 
-<p>It's so fun, I'll <strong>make a list</strong>:</p>
+            <p>It's so fun, I'll <strong>make a list</strong>:</p>
 
-<ul>
-<li>This</li>
-<li>That</li>
-<li>More!</li>
-</ul>
+            <ul>
+            <li>This</li>
+            <li>That</li>
+            <li>More!</li>
+            </ul>
 
-<p>Checkout <a href=\"http://technokracy.net\">Technokracy</a> for free beer.</p>
-";
-		$result = $this->Markdown->md($input);
-		debug($result);
+            <p>Checkout <a href="http://technokracy.net">Technokracy</a> for free beer.</p>
+            EOT . "\n";
+        $result = $this->Markdown->md($input);
 
-		$this->assertEquals($expected, $result);
-	}
-
-
+        $this->assertEquals($expected, $result);
+    }
 }
