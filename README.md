@@ -17,13 +17,6 @@ A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a 
 composer require pieceofcake2/markdown
 ```
 
-In `Config/bootstrap.php`, import composer's autoload file:
-
-```php
-<?php
-App::import('Vendor', array('file' => 'autoload'));
-```
-
 ## Usage
 
 In your controller:
