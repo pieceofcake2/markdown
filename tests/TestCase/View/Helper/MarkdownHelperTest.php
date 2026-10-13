@@ -1,7 +1,6 @@
 <?php
 App::uses('MarkdownHelper', 'Markdown.View/Helper');
 App::uses('View', 'View');
-App::import('Vendor', ['file' => 'autoload']);
 
 /**
  * MarkdownHelper Test Case
