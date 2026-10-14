@@ -8,35 +8,30 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/pieceofcake2/markdown/CI.yml?label=CI)](https://github.com/pieceofcake2/markdown/actions/workflows/CI.yml)
 [![Codecov](https://img.shields.io/codecov/c/gh/pieceofcake2/markdown?label=Coverage)](https://codecov.io/gh/pieceofcake2/markdown)
 
-__This is forked for CakePHP2.__
-
-A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a plugin.
+A helper that converts Markdown to HTML with [PHP Markdown](https://github.com/michelf/php-markdown/)
+(Markdown Extra syntax), packaged as a plugin. This is a fork of
+[chronon/CakePHP-Markdown-Plugin](https://github.com/chronon/CakePHP-Markdown-Plugin) for
+[pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp).
 
 ## Requirements
 
-The 2.x branch has the following requirements:
-
-* CakePHP 2.12+ ([pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp))
 * PHP 8.0+
+* pieceofcake2/cakephp 2.12+
 
 ## Installation
 
-```bash
+```
 composer require pieceofcake2/markdown
 ```
 
-## Usage
+## Documentation
 
-In your controller:
+See the [documentation](https://pieceofcake2.github.io/markdown/).
 
-```php
-<?php
-public $helpers = array('Markdown.Markdown');
-```
+## Contributing
 
-In your view:
+See the [contribution guidelines](https://github.com/pieceofcake2/.github/blob/master/CONTRIBUTING.md).
 
-```php
-<?php
-echo $this->Markdown->md(markdown_to_be_converted_to_html);
-```
+## License
+
+The MIT License. See [LICENSE](LICENSE).

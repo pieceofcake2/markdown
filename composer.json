@@ -1,7 +1,7 @@
 {
     "name": "pieceofcake2/markdown",
     "type": "cakephp-plugin",
-    "description": "A CakePHP 2.x Markdown helper packaged as a plugin.",
+    "description": "CakePHP 2 helper that converts Markdown to HTML with PHP Markdown Extra",
     "keywords": ["cakephp", "cakephp2", "helper", "markdown"],
     "license": "MIT",
     "require": {
