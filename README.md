@@ -20,7 +20,7 @@ A helper that converts Markdown to HTML with [PHP Markdown](https://github.com/m
 
 ## Installation
 
-```
+```bash
 composer require pieceofcake2/markdown
 ```
 
