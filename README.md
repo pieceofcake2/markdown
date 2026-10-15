@@ -35,6 +35,15 @@ composer require pieceofcake2/markdown
 
 See the [contribution guidelines](https://github.com/pieceofcake2/.github/blob/master/CONTRIBUTING.md).
 
+## Origin
+
+This package is a maintained fork of
+[chronon/CakePHP-Markdown-Plugin](https://github.com/chronon/CakePHP-Markdown-Plugin)
+(`chronon/markdown` on Packagist, last upstream version 2.1.0), originally by Gregory Gaskill. It is
+maintained for CakePHP 2 on modern PHP by [pieceofcake2](https://github.com/pieceofcake2). Changes
+from the original are listed in the
+[commit history since the fork](https://github.com/pieceofcake2/markdown/compare/3788e3e...2.x).
+
 ## License
 
 The MIT License. See [LICENSE](LICENSE).

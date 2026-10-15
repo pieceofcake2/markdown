@@ -57,3 +57,12 @@ fenced code blocks and footnotes are available.
 Markdown allows raw HTML, and `md()` returns the HTML as is. Do not pass untrusted input (e.g.
 user comments) to `md()` without sanitizing the result, or you open your site to cross-site
 scripting.
+
+## Origin
+
+This package is a maintained fork of
+[chronon/CakePHP-Markdown-Plugin](https://github.com/chronon/CakePHP-Markdown-Plugin)
+(`chronon/markdown` on Packagist, last upstream version 2.1.0), originally by Gregory Gaskill. It is
+maintained for CakePHP 2 on modern PHP by [pieceofcake2](https://github.com/pieceofcake2). Changes
+from the original are listed in the
+[commit history since the fork](https://github.com/pieceofcake2/markdown/compare/3788e3e...2.x).
