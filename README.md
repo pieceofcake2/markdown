@@ -4,7 +4,7 @@
 [![Packagist Version](https://img.shields.io/packagist/v/pieceofcake2/markdown?label=Packagist)](https://packagist.org/packages/pieceofcake2/markdown)
 ![PHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/markdown/php?logo=php&logoColor=%23FFFFFF&label=PHP&labelColor=%23777BB4&color=%23FFFFFF)
 ![CakePHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/markdown/pieceofcake2/cakephp?logo=cakephp&logoColor=%23FFFFFF&label=CakePHP&labelColor=%23D33C43&color=%23FFFFFF)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen?label=PHPStan)](https://github.com/pieceofcake2//Users/tsuyoshi/dev/pieceofcake2/markdown/actions/workflows/CI.yml)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen?label=PHPStan)](https://github.com/pieceofcake2/markdown/actions/workflows/CI.yml)
 [![CI](https://img.shields.io/github/actions/workflow/status/pieceofcake2/markdown/CI.yml?label=CI)](https://github.com/pieceofcake2/markdown/actions/workflows/CI.yml)
 [![Codecov](https://img.shields.io/codecov/c/gh/pieceofcake2/markdown?label=Coverage)](https://codecov.io/gh/pieceofcake2/markdown)
 
